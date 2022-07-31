@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Tapimar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,24 +17,37 @@
         
 </head>
 <body>
-    <header>
-        <p class="logo-tapimar">TM</p>
-        <img class="logotapimar" src="../icons/logotapimarb.png" alt="No carga imagen">
-        
-        
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div>
+                <img class="logotapimar" src="../icons/logotapimar-02.png" alt="No carga imagen">
+            </div>
 
-        <nav>
-            <ul class="lista-flex">
-                <li class="contenido"><a href="../index.html">Inicio</a></li>
-                <li class="contenido"><a href="../Pages/contacto.html">Contacto</a></li>
-                <li class="contenido"><a href="../Pages/productos.html">Producto</a></li>
-                <li class="contenido"><a href="../Pages/franquicia.html">Franquicia</a></li>
-                <li class="contenido"><a href="../Pages/sobrenosotros.html">Sobre Nosotros</a></li>
-            </ul>
-        </nav>
-            
+            <a class="navbar-brand"  href="#">
 
-    </header>
+            </a>
+            <!--boton del menu-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Elementos del menu colapsable-->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../Pages/contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../Pages/productos.html">Producto</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../Pages/franquicia.html">Franquicia</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../Pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    
 
     <p class="h2SobreNosotros">Sobre Nosotros</p>
 
@@ -39,13 +55,22 @@
 
         <img class="imgproducto2" src="../Images/trabajo44.png" alt="No carga imagen">
 
-        <p class="textoSobreNosotros">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto velit ut quas consectetur illum illo, ea repudiandae a vitae corporis, libero ipsam unde neque maiores! Soluta quis fugiat nihil, autem, ipsum iusto minus consectetur accusamus expedita fuga, voluptate molestias nulla.</p>
+        <p class="textoSobreNosotros">Somos Tapicería Tapimar, una empresa con más de 30 años de trayectoria en Córdoba capital. Nuestro emprendimiento familiar se encuentra en constante crecimiento.
+        Tenemos el objetivo de satisfacer a cada cliente, por ello, ofrecemos resultados integrales que sean acordes con sus necesidades. Llevamos a cabo los retapizados y restauraciones de muebles antiguos y modernos de la mejor calidad.
+        Nos avalan la seriedad y el compromiso por el trabajo.</p>
 
         <img class="imgproducto2" src="../Images/trabajo33.png" alt="No carga imagen">
 
-        <p class="textoSobreNosotros">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto velit ut quas consectetur illum illo, ea repudiandae a vitae corporis, libero ipsam unde neque maiores! Soluta quis fugiat nihil, autem, ipsum iusto minus consectetur accusamus expedita fuga, voluptate molestias nulla.</p>
-
-    </div>
+        <p class="textoSobreNosotros">En Tapicería Tapimar nos especializamos en retapizados.
+            Además, realizamos:
+            • Restauraciones
+            • Ajustes de carpintería
+            • Lavados y lustres de madera
+            • Tapicería con mano artesanal
+            • Esterillado, trabajos de tornería y tallados
+            • Confecciones de fundas para juegos de living
+            • Fabricación a pedido de sofás y respaldos para sommiers</p>
+        </div>
     
 
     
@@ -66,5 +91,8 @@
         </div>
         
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>

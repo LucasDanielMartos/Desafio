@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Tapimar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,29 +20,41 @@
 
 <body class="contenedorgrid10">
 
-    <header>
-        <p class="logo-tapimar">TM</p>
-        <img class="logotapimar" src="../icons/logotapimarb.png" alt="No carga imagen">
-        
-        
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div>
+                <img class="logotapimar" src="../icons/logotapimar-02.png" alt="No carga imagen">
+            </div>
 
-        <nav>
-            <ul class="lista-flex">
-                <li class="contenido"><a href="../index.html">Inicio</a></li>
-                <li class="contenido"><a href="../Pages/contacto.html">Contacto</a></li>
-                <li class="contenido"><a href="../Pages/productos.html">Producto</a></li>
-                <li class="contenido"><a href="../Pages/franquicia.html">Franquicia</a></li>
-                <li class="contenido"><a href="../Pages/sobrenosotros.html">Sobre Nosotros</a></li>
-            </ul>
-        </nav>
-            
+            <a class="navbar-brand"  href="#">
 
-    </header>
+            </a>
+            <!--boton del menu-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Elementos del menu colapsable-->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../Pages/contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../Pages/productos.html">Producto</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../Pages/franquicia.html">Franquicia</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../Pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                </ul>
 
+            </div>
+
+        </div>
+
+    </nav>
+
+    
 
     <section>
-        
-        <p class="tituloProducto"> Estos son nuestros trabajos</p>
+
+        <p class="tituloProducto"> Estos son nuestros trabajos </p>
+       
         
         <div class="grid">
             <img class="imgproducto" src="../Images/100.jpg" alt="No carga imagen">
@@ -83,7 +98,7 @@
 
     <section>
         <div class="videoproductos">  
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/hTIUvfvhMak" title="YouTube video player" frameborder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="700" height="400" src="https://www.youtube.com/embed/hTIUvfvhMak" title="YouTube video player" frameborder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -106,6 +121,8 @@
         </div>
         
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
 </html>

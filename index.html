@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <link rel="stylesheet" href="CSS/style.css">
     <title>Tapimar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,41 +17,56 @@
     
 </head>
 <body>
-    <header>
-        <p class="logo-tapimar">TM</p>
-        <img class="logotapimar" src="icons/logotapimarb.png" alt="No carga imagen">
+    
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div>
+                    <img class="logotapimar" src="icons/logotapimar-02.png" alt="No carga imagen">
+                </div>
         
-        <div class="buscar">
-            <p class="textobuscar" >Buscar: </p>
-            <input type="text" class="buscar_texto">
-        </div>
 
-        <nav>
-            <ul class="lista-flex">
-                <li class="contenido"><a href="index.html">Inicio</a></li>
-                <li class="contenido"><a href="Pages/contacto.html">Contacto</a></li>
-                <li class="contenido"><a href="Pages/productos.html">Producto</a></li>
-                <li class="contenido"><a href="Pages/franquicia.html">Franquicia</a></li>
-                <li class="contenido"><a href="Pages/sobrenosotros.html">Sobre Nosotros</a></li>
-            </ul>
+                <a class="navbar-brand"  href="#">
+
+
+                </a>
+                <!--boton del menu-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Elementos del menu colapsable-->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="Pages/contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="Pages/productos.html">Producto</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="Pages/franquicia.html">Franquicia</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="Pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
         </nav>
-            
 
-    </header>
+   
 
     <div>
+        <div class="buscar">
+            <p class="textobuscar" >Buscar:</p>
+            <input type="text" class="buscar_texto">
+        </div>
         <img class="fondo2" src="Images/Fondo2.jpg" alt="No se carga imagen">
-        
     </div>
 
 
-    
-    <section>
-        <nav class="bordeizq">
+    <!--
+    <section class="contenedorindex">
+        <div class="bordeizq">
             
-        </nav>
+        </div>
 
-        <article class="contenedorinterno">
+        <div class="contenedorinterno">
             <div class="separadores">
                 
                 <p>Algunos de los trabajos que se desempeña la empresa</p>
@@ -73,11 +91,59 @@
                 
             </div>
             
-        </article>
+        </div>
 
-        <aside class="bordeder">
+        <div class="bordeder">
             
-        </aside>
+        </div>
+
+    </section>-->
+
+    <section>
+        <div class="contenedortitulo">
+            <h2 class="texttitulo">Somos Tapicería Tapimar</h2>
+            <P class="textsubtitulo">Una empresa familiar con más de 30 años en el mercado.</P>
+        </div>
+        
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/304.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Garantizamos calidad</h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Images/301.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Nos especializamos en retapizados.</h5>
+                  <p> </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Images/303.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5> Tapicería de estilo, restauracion y lustre</h5>
+                  <p> </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
     </section>
 
@@ -98,5 +164,8 @@
         </div>
         
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>
