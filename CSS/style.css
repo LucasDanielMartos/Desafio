@@ -29,8 +29,8 @@ header{
 
 .logotapimar{
     position: absolute;
-    margin-top: -20px;
-    margin-left:10px;
+    margin-top: -16px;
+    margin-left:-5px;
     height: 40px;
     align-items: center;
     
@@ -165,57 +165,27 @@ padding:10px;
     border-radius: 15px;
 }
 
-/**
-.bordeizq{
-    width: 20%;
-    height: auto;
-
-    
-    
-}
-.contenedorinterno{
-    width: 60%;
-    height: auto;
-    
-}
-
-.bordeder{
-    width: 20%;
-    height:auto;
-}**/
-
 /*--------------------CSS INDEX FOOTER--------------------*/
 
-.footer0{
-    margin-top: 50px;
-    width: 100%;
-    display: flex;
-    flex-direction:row;
-}
-
-.footer1{
-    width: 30%;
-    height: auto;
-    background: linear-gradient(0deg, rgba(48, 44, 42, 0.582) 20%, rgba(163, 152, 146, 0) 100%);
-    padding-top: 40px;
-    text-align: center;
+.gridfooter{
+    display: grid;
+    margin: auto;
+    height: 150px;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    background-color:rgb(48, 44, 42);
     
 }
-.footer2{
-    width: 40%;
-    height:auto;
-    background: linear-gradient(0deg, rgba(48, 44, 42, 0.582) 20%, rgba(163, 152, 146, 0) 100%);
+.footer1{
     text-align: center;
-    padding-top: 40px;
+}
+.footer2{
+    text-align: center;
 }
 .footer3{
-    width: 30%;
-    height:auto;
-    background: linear-gradient(0deg, rgba(48, 44, 42, 0.582) 20%, rgba(163, 152, 146, 0) 100%);
     text-align: center;
-    padding-top: 40px;
-
 }
+
 .logoubicacion{
     width: 40px;
 }
@@ -232,6 +202,7 @@ padding:10px;
 .formcontacto{
     width: 450px;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 .titulocontacto{
@@ -333,85 +304,8 @@ padding:10px;
 }
 
 
-/**--------------TODAS LAS MEDIA SCREEN--------------**/
-
-@media screen and (max-width: 1260px){
-/**--------------MEDIA SCREEN PRODUCTOS--------------**/
-    
-    .grid{
-        display: grid;
-        width: 800px;
-        margin: auto;
-        margin-top: 50px;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        gap: 1em;
-        background-color:rgb(48, 44, 42);
-        border-radius: 15px; 
-        
-    }
-    
-    
-    
-    .imgproducto{
-        margin: auto;
-        height: 350px;
-        border-radius: 30px;
-    }
-    
-    .grid3{
-        width: 10px;
-    }
-    
-
-/**--------------MEDIA SCREEN FRANQUICIA--------------**/
-
-}
-
-
-/**--------------TODOS MEDIA SCREEN 790PX--------------**/
-
-@media screen and (max-width: 790px){
-
-/**--------------MEDIA SCREEN INICIO--------------**/
-
-/**--------------MEDIA SCREEN CONTACTO--------------**/
-
-/**--------------MEDIA SCREEN PRODUCTOS--------------**/
-    .grid{
-        display: grid;
-        width: 380px;
-        margin: auto;
-        margin-top: 50px;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        gap: 1em;
-        background-color:rgb(48, 44, 42);
-        border-radius: 15px;     
-    }
-    .imgproducto{
-        margin: auto;
-        height: 350px;
-        border-radius: 30px;
-    }
-    .videoproductos{
-        display: flex;
-        width: 380px;
-        margin: auto;
-        padding: 0px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-}
-/**--------------MEDIA SCREEN FRANQUICIA--------------**/
-/**--------------MEDIA SCREEN SOBRE NOSOTROS--------------**/
-
-
 /*--------------------CSS FRANQUICIA--------------------*/
 
-/**.contenedorGrid3{
-    
-}**/
 
 .h2Franquicia{
     display: flex;
@@ -458,37 +352,7 @@ padding:10px;
     margin: auto;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
-}
-@media screen and (max-width: 790px){
-    .grid3{
-        display: grid;
-        width: 100px;
-        height: auto;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        grid-template-columns: 500px;
-        grid-template-rows: 490px;
-        gap: 1em;
-        background-color:rgb(48, 44, 42);
-        border-radius: 30px;
-        
-    }
-    .imgFranquicia{
-        margin: auto;
-        
-        width: 400px;
-        border-radius: 30px;
-        
-    }
-    .textoFranquicia{
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 20px;
-        text-align: center;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 18px;
-    }
+    text-align: center;
 }
 
 
@@ -544,16 +408,143 @@ padding:10px;
     font-size: 18px;
 }
 
+/**--------------TODAS LAS MEDIA SCREEN 1260px--------------**/
 
+@media screen and (max-width: 1260px){
+/**--------------MEDIA SCREEN INDEX--------------**/
+/**--------------MEDIA SCREEN CONTACTO--------------**/
+/**--------------MEDIA SCREEN PRODUCTOS--------------**/
+        
+        .grid{
+            display: grid;
+            width: 800px;
+            margin: auto;
+            margin-top: 50px;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            gap: 1em;
+            background-color:rgb(48, 44, 42);
+            border-radius: 15px; 
+            
+        }
+
+        .imgproducto{
+            margin: auto;
+            height: 350px;
+            border-radius: 30px;
+        }
+        
+        .grid3{
+            width: 700px;
+            grid-template-columns: 500px 200px;
+            
+                
+        }
+        
+    
+/**--------------MEDIA SCREEN FRANQUICIA--------------**/
+    .grid3{
+        width: 750px;
+        grid-template-columns: 500 auto;
+        
+        
+    }
+    .imgFranquicia{
+        
+        justify-content: center;
+        width: 450px; 
+        border-radius: 30px;
+        margin-right: -50px;
+    }
+
+/**--------------MEDIA SCREEN SOBRE NOSOTROS--------------**/
+
+}
+
+
+
+/**--------------TODOS MEDIA SCREEN 790PX--------------**/
 @media screen and (max-width: 790px){
-    .grid2{
+/**---------------INDEX---------------**/
+    .carousel{
+        width: 460px;
+    }
+/**-------------FOOTER---------------**/
+    .gridfooter{
         display: grid;
-        width: 500px;
+        
+        height: 450px;
+      
+        
+        
+        grid-template-columns: auto;
+        grid-template-rows: 150px 150px 150px;
+    }
+     /**--------------MEDIA SCREEN INICIO--------------**/
+    
+    /**--------------MEDIA SCREEN CONTACTO--------------**/
+
+    /**--------------MEDIA SCREEN PRODUCTOS--------------**/
+    .grid{
+        display: grid;
+        width: 380px;
+        margin: auto;
+        margin-top: 50px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 1em;
+        background-color:rgb(48, 44, 42);
+        border-radius: 15px;     
+    }
+    .imgproducto{
+        margin: auto;
+        height: 350px;
+        border-radius: 30px;
+    }
+    .videoproductos{
+        display: flex;
+        width: 380px;
+        margin: auto;
+        padding: 0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+/**-------------FRANQUICIAA---------------**/
+    .grid3{
+        display: grid;
+        width: 450px;
         margin: auto;
         margin-top: 50px;
         margin-bottom: 50px;
-        grid-template-columns: 500px;
-        grid-template-rows: auto auto auto;
+        grid-template-columns: 450px;
+        grid-template-rows: auto auto;
+       
+        
+        
+        }   
+        .imgFranquicia{
+            
+            
+            justify-content: center;
+            width: 450px; 
+            border-radius: 30px;
+        }
+        .textoFranquicia{
+           text-align: center;
+           margin-top: 10px;
+           margin-bottom: 20px;
+        }
+        
+ /**--------------MEDIA SCREEN SOBRE NOSOTROS--------------**/
+    .grid2{
+        display: grid;
+        width: 450px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        grid-template-columns: 450px;
+        grid-template-rows: auto auto auto auto;
         align-items: center;
         gap: 1em;
         background-color:rgb(48, 44, 42);
@@ -568,7 +559,7 @@ padding:10px;
         
         
     }
-    
+
     .textoSobreNosotros{
         margin: auto;
         margin-left: 10px;
@@ -578,4 +569,12 @@ padding:10px;
         font-family: 'Quicksand', sans-serif;
         font-size: 18px;
     }
+
 }
+
+
+    
+
+
+
+
