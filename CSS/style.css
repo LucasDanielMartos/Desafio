@@ -124,7 +124,8 @@ padding:10px;
 
 .carousel{
     width: 70%;
-    margin: auto;  
+    margin: auto;
+    /**filter:blur(50%)**/
 }
 
 .carousel-inner{
@@ -518,10 +519,3 @@ padding:10px;
         font-size: 18px;
     }
 }
-
-
-    
-
-
-
-
