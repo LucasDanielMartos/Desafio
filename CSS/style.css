@@ -12,72 +12,43 @@ body{
 /*--------------------CSS INICIO INDEX--------------------*/
 /*--------------------CSS HEDER INDEX--------------------*/
 
-
-/**
-header{
-    position: relative;
-    height: 10px;
-    width: 100%;
-    padding: 28px 0;
-    display: flex;
-    
-    align-items: center;
-    background-color:rgb(48, 44, 42); 
-    
-}**/
-
-
 .logotapimar{
     position: absolute;
     margin-top: -16px;
     margin-left:-5px;
     height: 40px;
     align-items: center;
-    
 }
-
-
 
 .navbar{
 padding:10px;
-
-
 }
 
 .nav-item{
-    margin-left: 10px;
     list-style: none;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
+    margin-right: 3px;
     opacity: 95%;
     color:white;
-    
 }
-
-
 
 .nav-item:hover{
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgb(110, 110, 110) 100%);
-    font-size: 20px;
-}
-.nav-item:active{
-    
-    font-size: 19px;
-    
-    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgb(170, 170, 170) 100%);
-    
+    font-size: 22px;
 }
 
-
+.nav-item:active{   
+    font-size: 19px; 
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgb(170, 170, 170) 100%);  
+}
 
 .fondo2{
     max-width: 100%;
     display: flex;
 }
-
-
 
 .buscar{
     margin: auto;
@@ -86,12 +57,13 @@ padding:10px;
     align-items: center;
     position:absolute;
     left: 50%;
-    top: 100px;
+    margin-top: 0px;
     transform: translate(-50%);
     background: rgb(231, 231, 231);
     padding: 10px;
     height: 40px;
-    border-radius: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .buscar_texto{
@@ -103,25 +75,20 @@ padding:10px;
     font-size: 15px;
     line-height: 15px;
     transition: .5s;
-    width: 0px;
-    
-    
+    width: 0px; 
 }
+
 .textobuscar{
     padding-top: 15px;
     font-size: 15px;
     color:rgb(66, 66, 66);
     font-family: 'Quicksand', sans-serif;
     margin-top: 3px
-    
-
 }
 
-
 .buscar:hover .buscar_texto{
-    width: 200px;
+    width: 250px;
     background: rgb(231, 231, 231);
-    
 }
 
 /*--------------------CSS NAVEGACION INDEX--------------------*/
@@ -130,21 +97,23 @@ padding:10px;
     margin-top: 50px;
     text-align: center;
 }
+
 .texttitulo{
     color: rgb(59, 59, 59);
     font-family: 'Quicksand', sans-serif;
     text-decoration: underline;
 }
+
 .textsubtitulo{
     color: rgb(59, 59, 59);
     font-family: 'Quicksand', sans-serif;
 }
 
-
 .separadores{
     height: 100px;
     width: 100%;
 }
+
 .separadores p{
     color: #000000;
     text-align: center;
@@ -155,8 +124,7 @@ padding:10px;
 
 .carousel{
     width: 70%;
-    margin: auto;
-    
+    margin: auto;  
 }
 
 .carousel-inner{
@@ -173,15 +141,17 @@ padding:10px;
     height: 150px;
     grid-template-columns: auto auto auto;
     align-items: center;
-    background-color:rgb(48, 44, 42);
-    
+    background-color:rgb(48, 44, 42);  
 }
+
 .footer1{
     text-align: center;
 }
+
 .footer2{
     text-align: center;
 }
+
 .footer3{
     text-align: center;
 }
@@ -189,6 +159,7 @@ padding:10px;
 .logoubicacion{
     width: 40px;
 }
+
 .logofacebook{
     width: 40px
 }
@@ -214,16 +185,16 @@ padding:10px;
     font-family: 'Quicksand', sans-serif;
     text-decoration: underline;
 }
+
 .form-label{
     color: rgb(59, 59, 59);
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
-
 }
+
 .opciones{
     color: rgb(59, 59, 59);
 }
-
 
 .separadores5{
     height: 5px;
@@ -232,17 +203,16 @@ padding:10px;
 .separadores20{
     height: 20px;
 }
+
 .separadores40{
     height: 40px;
 }
+
 .separadores100{
     height: 100px;
 }
 
-
-
 /*--------------------css PRODUCTOS--------------------*/
-
 
 .tituloProducto{
     margin-top: 50px;
@@ -262,23 +232,24 @@ padding:10px;
     grid-template-rows: auto;
     gap: 1em;
     background-color:rgb(48, 44, 42);
-    border-radius: 15px;
-    
+    border-radius: 15px; 
 }
+
 .grid .imgproducto{
     padding: 1em;
 }
+
 .imgproducto{
     margin: auto;
     height: 350px;
     border-radius: 30px;
 }
+
 .h2Franquicia{
     display: flex;
     padding: 0;
     margin: auto;
     margin-top: 50px;
-    
     justify-content: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
@@ -289,37 +260,27 @@ padding:10px;
 .imgproducto:hover{
     font-size: 5px;
     transition: .3s;
-    
 }
-
 
 .videoproductos{
-    
     text-align: center;
-    
     margin-top: 50px;
-    margin-bottom: 50px;
-    
-    
+    margin-bottom: 50px; 
 }
 
-
 /*--------------------CSS FRANQUICIA--------------------*/
-
 
 .h2Franquicia{
     display: flex;
     padding: 0;
     margin: auto;
-    margin-top: 50px;
-    
+    margin-top: 50px; 
     justify-content: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
     color: rgb(0, 0, 0);
     text-decoration:underline;
 }
-
 
 .grid3{
     display: grid;
@@ -330,24 +291,19 @@ padding:10px;
     grid-template-columns: 600px 300px;
     gap: 1em;
     background-color:rgb(48, 44, 42);
-    border-radius: 30px;
-    
+    border-radius: 30px;   
 }
-.grid3 .imgFranquicia{
-    
-    
-    padding: 1em;
-    
+
+.grid3 .imgFranquicia{  
+    padding: 1em; 
 }
 
 .imgFranquicia{
-    
-    
     justify-content: center;
-   
     width: 450px; 
     border-radius: 30px;
 }
+
 .textoFranquicia{
     margin: auto;
     font-family: 'Quicksand', sans-serif;
@@ -355,9 +311,7 @@ padding:10px;
     text-align: center;
 }
 
-
 /*--------------------css SOBRENOSOTROS--------------------*/
-
 
 .h2SobreNosotros{
     padding: 0;
@@ -371,7 +325,6 @@ padding:10px;
     text-decoration:underline;
 }
 
-
 .grid2{
     display: grid;
     width: 800px;
@@ -383,13 +336,12 @@ padding:10px;
     align-items: center;
     gap: 1em;
     background-color:rgb(48, 44, 42);
-    border-radius: 30px;
-    
+    border-radius: 30px; 
 }
+
 .grid2 .imgproducto2{
     display: flex;
     padding: 1em;
-    
 }
 
 .imgproducto2{
@@ -411,46 +363,43 @@ padding:10px;
 /**--------------TODAS LAS MEDIA SCREEN 1260px--------------**/
 
 @media screen and (max-width: 1260px){
-/**--------------MEDIA SCREEN INDEX--------------**/
-/**--------------MEDIA SCREEN CONTACTO--------------**/
-/**--------------MEDIA SCREEN PRODUCTOS--------------**/
-        
-        .grid{
-            display: grid;
-            width: 800px;
-            margin: auto;
-            margin-top: 50px;
-            grid-template-columns: auto auto;
-            grid-template-rows: auto auto;
-            gap: 1em;
-            background-color:rgb(48, 44, 42);
-            border-radius: 15px; 
-            
-        }
 
-        .imgproducto{
-            margin: auto;
-            height: 350px;
-            border-radius: 30px;
-        }
-        
-        .grid3{
-            width: 700px;
-            grid-template-columns: 500px 200px;
-            
-                
-        }
-        
+/**--------------MEDIA SCREEN INDEX--------------**/
+
+/**--------------MEDIA SCREEN CONTACTO--------------**/
+
+/**--------------MEDIA SCREEN PRODUCTOS--------------**/
+
+    .grid{
+        display: grid;
+        width: 800px;
+        margin: auto;
+        margin-top: 50px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 1em;
+        background-color:rgb(48, 44, 42);
+        border-radius: 15px;    
+    }
+
+    .imgproducto{
+        margin: auto;
+        height: 350px;
+        border-radius: 30px;
+    }
     
+    .grid3{
+        width: 700px;
+        grid-template-columns: 500px 200px;          
+    }
+         
 /**--------------MEDIA SCREEN FRANQUICIA--------------**/
+
     .grid3{
         width: 750px;
-        grid-template-columns: 500 auto;
-        
-        
+        grid-template-columns: 500 auto; 
     }
-    .imgFranquicia{
-        
+    .imgFranquicia{ 
         justify-content: center;
         width: 450px; 
         border-radius: 30px;
@@ -461,30 +410,31 @@ padding:10px;
 
 }
 
-
-
 /**--------------TODOS MEDIA SCREEN 790PX--------------**/
+
 @media screen and (max-width: 790px){
+
 /**---------------INDEX---------------**/
+
     .carousel{
         width: 460px;
     }
+
 /**-------------FOOTER---------------**/
+
     .gridfooter{
-        display: grid;
-        
-        height: 450px;
-      
-        
-        
+        display: grid;    
+        height: 450px; 
         grid-template-columns: auto;
         grid-template-rows: 150px 150px 150px;
     }
-     /**--------------MEDIA SCREEN INICIO--------------**/
-    
-    /**--------------MEDIA SCREEN CONTACTO--------------**/
 
-    /**--------------MEDIA SCREEN PRODUCTOS--------------**/
+/**--------------MEDIA SCREEN INICIO--------------**/
+    
+/**--------------MEDIA SCREEN CONTACTO--------------**/
+
+/**--------------MEDIA SCREEN PRODUCTOS--------------**/
+
     .grid{
         display: grid;
         width: 380px;
@@ -496,11 +446,13 @@ padding:10px;
         background-color:rgb(48, 44, 42);
         border-radius: 15px;     
     }
+
     .imgproducto{
         margin: auto;
         height: 350px;
         border-radius: 30px;
     }
+
     .videoproductos{
         display: flex;
         width: 380px;
@@ -519,17 +471,14 @@ padding:10px;
         margin-bottom: 50px;
         grid-template-columns: 450px;
         grid-template-rows: auto auto;
-       
-        
-        
         }   
+
         .imgFranquicia{
-            
-            
             justify-content: center;
             width: 450px; 
             border-radius: 30px;
         }
+
         .textoFranquicia{
            text-align: center;
            margin-top: 10px;
@@ -537,6 +486,7 @@ padding:10px;
         }
         
  /**--------------MEDIA SCREEN SOBRE NOSOTROS--------------**/
+
     .grid2{
         display: grid;
         width: 450px;
@@ -549,15 +499,13 @@ padding:10px;
         gap: 1em;
         background-color:rgb(48, 44, 42);
         border-radius: 30px;
-        
     }
+
     .grid2 .imgproducto2{
         margin: auto;
         width: 400px;
         margin-top: 10px;
         margin-bottom: 10px;
-        
-        
     }
 
     .textoSobreNosotros{
@@ -569,7 +517,6 @@ padding:10px;
         font-family: 'Quicksand', sans-serif;
         font-size: 18px;
     }
-
 }
 
 
