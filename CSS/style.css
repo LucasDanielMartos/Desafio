@@ -48,7 +48,10 @@ body {
 
 .fondo2 {
   max-width: 100%;
-  display: flex;
+}
+
+.fondo3 {
+  max-width: 100%;
 }
 
 .buscar {
