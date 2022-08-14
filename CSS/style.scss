@@ -1,9 +1,10 @@
 @import "../variables.scss";
+
 *{
     margin: 0;
     padding: 0;
     box-sizing:  border-box;
-    color: rgb(245, 245, 245);
+    color: rgb(245, 245, 245); 
 }
 body{
     height: 100vh;
@@ -20,7 +21,6 @@ body{
     align-items: center;
 }
 
-
 .navbar{
 padding:8px;
 width: 100%;
@@ -35,13 +35,12 @@ width: 100%;
     font-size: 22px;
     margin-right: 5px;
     opacity: 95%;
-    color:white;
     height: 46px;
 }
 
 .nav-item{
     &:hover{
-        background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgb(110, 110, 110) 100%);
+        background: $colorgradiente;
         font-size: 22px;
     }
 }
@@ -49,7 +48,7 @@ width: 100%;
 .nav-item{
     &:active{   
         font-size: 19px; 
-        background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgb(170, 170, 170) 100%);  
+        background: $colorgradiente;  
     }
 }
 
@@ -115,6 +114,7 @@ width: 100%;
     color: $colorgris;
     font-family: 'Quicksand', sans-serif;
     text-decoration: underline;
+    
 }
 
 .textsubtitulo{
@@ -130,7 +130,7 @@ width: 100%;
 
 .separadores{
     p{
-        color: #000000;
+        color: #ffffff;
         text-align: center;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -140,10 +140,11 @@ width: 100%;
 }
 
 .carousel{
-    width: 70%;
+    width: 30%;
     margin-left: 100px;
     margin-right: 100px;
     margin: auto;
+    
     
     /**filter:blur(50%)**/
 }
@@ -152,6 +153,7 @@ width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 15px;
+    
 }
 
 /*--------------------CSS INDEX FOOTER--------------------*/
@@ -159,7 +161,7 @@ width: 100%;
 .gridfooter{
     display: grid;
     margin: auto;
-    height: 150px;
+    height: 200px;
     grid-template-columns: auto auto auto;
     align-items: center;
     background-color: $colorprincipal;  
@@ -269,12 +271,19 @@ width: 100%;
         padding: 1em;
     }
 }
+/*AGREGANDO ESTILOS A IMAGENES DE PRODUCTOS-------------------------- INICIO*/
+@mixin estiloproductos ($mapaproductos) {
+    height: map-get($mapaproductos, "ancho");
+    border-radius: map-get($mapaproductos, "radio");
+}
+$mapaproductos: (ancho: 350px, radio: 30px,);
 
 .imgproducto{
     margin: auto;
-    height: 350px;
-    border-radius: 30px;
+    @include estiloproductos ($mapaproductos);
+    
 }
+/*AGREGANDO ESTILOS A IMAGENES DE PRODUCTOS--------------------------- FIN*/
 
 .imgproducto{
     &:hover{
@@ -282,6 +291,7 @@ width: 100%;
         transition: .3s;
     }
 }
+
 
 .videoproductos{
     display: flex;
