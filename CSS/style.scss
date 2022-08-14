@@ -507,35 +507,39 @@ $mapaproductos: (ancho: 350px, radio: 30px,);
 /**-------------FRANQUICIAA---------------**/
     .grid3{
         display: grid;
-        width: 450px;
+        width: 380px;
         margin: auto;
         margin-top: 50px;
         margin-bottom: 50px;
-        grid-template-columns: 450px;
+        grid-template-columns: 380px;
         grid-template-rows: auto auto;
-        }   
-
         .imgFranquicia{
             justify-content: center;
-            width: 450px; 
+            width: 380px; 
             border-radius: 30px;
         }
+    }   
 
         .textoFranquicia{
-           text-align: center;
-           margin-top: 10px;
-           margin-bottom: 20px;
+            margin: auto;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 18px;
+            
         }
         
  /**--------------MEDIA SCREEN SOBRE NOSOTROS--------------**/
 
     .grid2{
         display: grid;
-        width: 450px;
+        width: 380px;
         margin: auto;
         margin-top: 50px;
         margin-bottom: 50px;
-        grid-template-columns: 450px;
+        grid-template-columns: 380px;
         grid-template-rows: auto auto auto auto;
         align-items: center;
         gap: 1em;
@@ -546,7 +550,7 @@ $mapaproductos: (ancho: 350px, radio: 30px,);
     .grid2{
         .imgproducto2{
             margin: auto;
-            width: 400px;
+            width: 380px;
             margin-top: 10px;
             margin-bottom: 10px;
         }
