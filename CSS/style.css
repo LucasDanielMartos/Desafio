@@ -48,10 +48,12 @@ body {
 
 .fondo2 {
   max-width: 100%;
+  display: flex;
 }
 
 .fondo3 {
   max-width: 100%;
+  display: flex;
 }
 
 .buscar {
@@ -223,7 +225,7 @@ body {
   height: 100px;
 }
 
-/*--------------------css PRODUCTOS--------------------*/
+/*--------------------css--------------------*/
 .tituloProducto {
   margin-top: 50px;
   text-align: center;
