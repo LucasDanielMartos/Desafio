@@ -252,6 +252,12 @@ body {
   padding: 1em;
 }
 
+.queseyo, .imgproducto:hover {
+  border-radius: 20%;
+  padding: 0px;
+  border: solid 10px rgb(53, 53, 53);
+}
+
 /*AGREGANDO ESTILOS A IMAGENES DE PRODUCTOS-------------------------- INICIO*/
 .imgproducto {
   margin: auto;
