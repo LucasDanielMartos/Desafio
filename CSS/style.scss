@@ -320,7 +320,7 @@ $mapaproductos: (ancho: 350px, radio: 30px,);
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    grid-template-columns: 600px 300px;
+    grid-template-columns: 550px 300px;
     gap: 1em;
     background-color:$colorprincipal;
     border-radius: 30px;   
@@ -414,7 +414,7 @@ $mapaproductos: (ancho: 350px, radio: 30px,);
 /**--------------MEDIA SCREEN FRANQUICIA--------------**/
     .grid3{
         width: 750px;
-        grid-template-columns: 450px 200px; 
+        grid-template-columns: 400px 300px; 
     }
     .imgFranquicia{ 
         justify-content: center;
