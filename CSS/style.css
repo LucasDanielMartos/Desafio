@@ -119,6 +119,18 @@ body {
   width: 100%;
 }
 
+.separadores50 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.separadores100 {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  width: 100%;
+}
+
 .separadores p {
   color: #ffffff;
   text-align: center;
